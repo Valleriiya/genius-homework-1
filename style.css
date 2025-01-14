@@ -1,0 +1,165 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v47-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/roboto-v47-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v47-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/roboto-v47-latin-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v47-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/roboto-v47-latin-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v47-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/roboto-v47-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* play-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/play-v19-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* play-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/play-v19-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+:root {
+  --color-font-main: #011c44;
+  --color-font-accent: #2b7fff;
+  --color-font-light: #fff;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Play", sans-serif;
+}
+
+/* ----global styles---- */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-font-main);
+}
+
+h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 64px;
+}
+
+/* ----common styles---- */
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-font-accent);
+}
+
+.button {
+  border-radius: 32px;
+  background-color: var(--color-font-accent);
+  color: var(--color-font-light);
+  border: none;
+}
+
+.button:hover {
+  border: 2px solid var(--color-font-accent);
+  color: var(--color-font-main);
+  background-color: transparent;
+}
+
+/* ----header---- */
+
+.header-nav > li > a {
+  color: var(--color-font-main);
+}
+
+.header-nav > li > a:hover {
+  color: var(--color-font-accent);
+}
+
+/* ----hero section---- */
+
+.hero-section > h1 {
+  text-transform: capitalize;
+  font-size: 140px;
+}
+
+.about-us-section > h2 {
+  text-transform: capitalize;
+}
+
+.about-us-section > p {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.about-us-section > p > span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* ----procedures section---- */
+
+.procedures-section {
+  font-size: 22px;
+}
+
+/* ----footer---- */
+
+.footer{
+    background-color: var(--color-font-main);
+    color: var(--color-font-light);
+}
+.footer-list > li > a {
+  color: var(--color-font-light);
+  font-style: normal;
+}
+
+.footer-list > li > a:hover {
+    color: var(--color-font-accent);
+  }
